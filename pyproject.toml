@@ -26,9 +26,3 @@ target_version = ['py310']
 [tool.ruff]
 line-length = 120
 target-version = "py310"
-
-[tool.mypy]
-disallow_untyped_defs = true
-disallow_incomplete_defs = true
-warn_no_return = true
-ignore_missing_imports = true
