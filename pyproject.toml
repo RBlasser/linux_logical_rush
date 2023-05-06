@@ -43,4 +43,4 @@ classifiers = [
 [tool.flit.scripts]
 # Command-line entry points for the package.
 # Uncomment and modify as needed.
-"logical_rush = logical_rush.__main__:main"
+#"logical_rush = logical_rush.__main__:main"
