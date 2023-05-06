@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools", "wheel>=0.36.2", "tomli>=1.1.0 ; python_version<'3.11'", "setuptools-rust>=1.4.0"]
+requires = ["setuptools", "wheel>=0.36.2", "tomli>=1.1.0 , python_version<'3.11'", "setuptools-rust>=1.4.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -24,7 +24,7 @@ dynamic = [
 
 [tool.black]
 target_version = ['py310']
-extend-exclude = '''
+
 
 
 [tool.ruff]
@@ -36,7 +36,3 @@ disallow_untyped_defs = true
 disallow_incomplete_defs = true
 warn_no_return = true
 ignore_missing_imports = true
-
-
-
-
