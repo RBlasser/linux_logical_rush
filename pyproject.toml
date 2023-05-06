@@ -1,3 +1,7 @@
+[metadata]
+name = "logical_rush"
+version = 0.1.0
+
 [build-system]
 # Minimum version of the build system required.
 # The specified version should be compatible with both `setuptools` and `flit`.
