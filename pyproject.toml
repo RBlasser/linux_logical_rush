@@ -1,9 +1,12 @@
 [build-system]
 # Minimum version of the build system required.
 # The specified version should be compatible with both `setuptools` and `flit`.
-requires = ["setuptools>=58.0.4", "wheel>=0.37.0", "flit_core>=3.4.0"]
+requires = ["setuptools>=67.7.2", "wheel>=0.40.0", "flit_core>=3.4.0", "tomli>=2.0.1", "pip>=23.1.2"]
 # Name of the build backend to be used.
 build-backend = "setuptools.build_meta"
+
+
+#dependencies = ["tomli>=2.0.1 ; python_version<'3.11'"]
 
 [tool.flit.metadata]
 # Name of the package.
