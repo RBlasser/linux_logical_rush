@@ -33,10 +33,11 @@ keywords = ["logical", "puzzles", "games"]
 [tool.flit.metadata.classifiers]
 # List of classifiers for the package. You can find the complete list of classifiers at
 # https://pypi.org/classifiers/
+classifiers = [
 "Programming Language :: Python :: 3"
 "Programming Language :: Python :: 3.10"
 "License :: OSI Approved :: MIT License"
-"Topic :: Games/Entertainment :: Puzzle Games"
+"Topic :: Games/Entertainment :: Puzzle Games"]
 
 [tool.flit.scripts]
 # Command-line entry points for the package.
