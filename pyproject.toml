@@ -1,28 +1,44 @@
 [build-system]
-requires = ["setuptools"]
+# Minimum version of the build system required.
+# The specified version should be compatible with both `setuptools` and `flit`.
+requires = ["setuptools>=58.0.4", "wheel>=0.37.0", "flit_core>=3.4.0"]
+# Name of the build backend to be used.
 build-backend = "setuptools.build_meta"
 
-[project]
-name = "logical_rush"
-requires-python = ">=3.7"
-classifiers = [
-    "Topic :: Software Development :: Build Tools",
-    "Programming Language :: Rust",
-    "Programming Language :: Python :: Implementation :: CPython",
-    "Programming Language :: Python :: Implementation :: PyPy",
-]
-dependencies = ["tomli>=1.1.0 ; python_version<'3.11'"]
-dynamic = [
-    "authors",
-    "description",
-    "license",
-    "readme",
-    "version"
-]
+[tool.flit.metadata]
+# Name of the package.
+module = "logical_rush"
+# Version of the package.
+version = "0.1.0"
+# Short summary of the package.
+summary = "A Python library for logical puzzles."
+# Description of the package.
+description = """
+logical_rush is a Python library for solving and generating logical puzzles.
+It includes a collection of common puzzles, such as Sudoku, Kakuro, and Nonograms,
+and provides interfaces for creating custom puzzles.
+"""
+# License for the package.
+license = "MIT License"
+# Author information.
+author = "Rodolfo Blasser"
+# Email address of the author.
+author-email = "rodolfoblasser@gmail.com"
+# URLs for the project.
+home-page = "https://github.com/RBlasser/linux_logical_rush"
+repository-url = "https://github.com/RBlasser/_linuxlogical_rush"
+# Keywords for the package.
+keywords = ["logical", "puzzles", "games"]
 
-[tool.black]
-target_version = ['py310']
+[tool.flit.metadata.classifiers]
+# List of classifiers for the package. You can find the complete list of classifiers at
+# https://pypi.org/classifiers/
+"Programming Language :: Python :: 3"
+"Programming Language :: Python :: 3.10"
+"License :: OSI Approved :: MIT License"
+"Topic :: Games/Entertainment :: Puzzle Games"
 
-[tool.ruff]
-line-length = 120
-target-version = "py310"
+[tool.flit.scripts]
+# Command-line entry points for the package.
+# Uncomment and modify as needed.
+"logical_rush = logical_rush.__main__:main"
